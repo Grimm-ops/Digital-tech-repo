@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<title>Audio!</title>
+
+<script>
+function start()
+{
+var clip = new Audio();
+clip.src = "shot.wav"
+
+clip.addEventListener("canplaythrough", function()
+{
+alert("I have loaded the audio");
+clip.play();
+});
+
+}
+</script>
+
+</head>
+
+<body>
+<input style="color: white; background: red; width: 200px; height: 75px" href="#" type="button" value="Make some noise" onclick="start()"></input>
+</body>
+
+<audio id="myaudio"controls>
+
+<source src="music.ogg">
+
+</audio>
+
+</html>

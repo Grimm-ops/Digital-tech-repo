@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+<title>html5 canvas</title>
+
+<script>
+
+var x = 10;
+function main()
+{
+// get reference to thing with id of canvas
+var canvas = document.getElementById("canvas");
+
+// set canvas width and height
+canvas.width = 640;
+canvas.height = 480;
+
+// create our context (like a pen to draw with)
+var ctx = canvas.getContext("2d");
+
+// call our draw function
+draw(ctx);
+}
+
+function draw(ctx)
+{
+// set the pen to gray, draw big rectangle
+ctx.fillStyle = "gray";
+ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+// set pen color to red
+ctx.fillStyle = "red";
+
+// do a drawing of some rectangle
+ctx.fillRect(x, 10, 100, 100);
+
+// increase x by 1
+x++;
+
+// ask browser to call this draw again on next "frame"
+window.requestAnimationFrame(function(){draw(ctx);});
+}
+
+
+window.onload = main;
+</script>
+
+</head>
+
+<body>
+
+<canvas id="canvas" style="background: gray"></canvas>
+
+</body>
+
+</html>

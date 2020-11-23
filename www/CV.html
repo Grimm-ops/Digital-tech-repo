@@ -1,0 +1,57 @@
+<html>
+
+  <head>
+    <title>Welcome!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script>
+	  function show(id)
+	  {
+	    hideAllMenus();
+	    var div = document.getElementById(id);
+		div.style.display = "block";
+	   }
+	   
+	  function hide(id)
+	  {
+	    var div = document.getElementById(id);
+		div.style.display = "none";
+	   }
+	  function hideAllMenus()
+	  {
+	    hide('projects');
+	   }
+	</script>
+	
+  </head>
+  
+  <body class="CVbody">
+  
+  <div id="header">
+  <div style="float: left">
+  </div>
+  
+  <div style="float: right">
+  <a href="Contact.html">contact</a>
+  <a href="index.html">home</a>
+  <a onclick= "show('projects')" href="#">Projects</a>
+  <a href="CV.html">CV</a>
+  <a href="#">hobbies</a>
+  </div>
+  
+  <div id="header">
+  <div style="float: left">
+  </div>
+  
+  </div>
+  
+  <div id="projects" style="display: none; background: orange; border-bottom: 1px solid black;">
+     <img src="images/Desert Eagle drawing.jpg" style="height: 100px">
+	 <img src="images/3.jpg" style="height: 100px">
+	 <a onclick="hide('projects')" href="#">close</a>
+  </div>
+  
+  <p class="sectionheading" >This is my CV page</p>
+  </body>
+
+</html>
