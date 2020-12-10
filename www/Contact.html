@@ -7,6 +7,7 @@
 	<script>
 	  function show(id)
 	  {
+	    playsound();
 	    hideAllMenus();
 	    var div = document.getElementById(id);
 		div.style.display = "block";
@@ -14,6 +15,7 @@
 	   
 	  function hide(id)
 	  {
+	    playsound();
 	    var div = document.getElementById(id);
 		div.style.display = "none";
 	   }
@@ -21,6 +23,13 @@
 	  {
 	    hide('projects');
 	   }
+	    function playsound()
+	  {
+	  var sound = new Audio();
+	  sound.src = "Music/shot.wav";
+	  sound.play();
+	  }
+	   
 	</script>
 	
   </head>
@@ -36,9 +45,9 @@
   <a href="#">3D Models</a>
   <a href="#">contact</a>
   <a href="index.html">home</a>
-  <a onclick= "show('projects')" href="#">Projects</a>
+  <a onclick= "show('projects')" href="#">Minor-Projects</a>
   <a href="CV.html">CV</a>
-  <a href="#">hobbies</a>
+  <a href="hobbies.html">hobbies</a>
   </div>
   
   <div id="header">
@@ -50,13 +59,17 @@
   <div id="projects" style="display: none; background: orange; border-bottom: 1px solid black;">
      <img src="images/Desert Eagle drawing.jpg" style="height: 100px">
 	 <img src="images/3.jpg" style="height: 100px">
+	 <img src="images/4.jpg" style="height: 100px">
+     <img src="images/5.jpg" style="height: 100px">
+     <img src="images/6.jpg" style="height: 100px">
+     <img src="images/7.jpg" style="height: 100px">	 
 	 <a onclick="hide('projects')" href="#">close</a>
   </div>
   
   <p class="sectionheading" >This is my contact page</p>
-  <p class="sectionheading" >email adress xxx///@WWW.com</p>
-  <p class="sectionheading" >phone number 000 000 000</p>
-  <p class="sectionheading" >real life adress "for physical deliveries only"
+  <p class="sectionheading" >email adress: xxx///@WWW.com</p>
+  <p class="sectionheading" >phone number: 000 000 000</p>
+  <p class="sectionheading" >real life adress: "for parcel deliveries only"
     Country; District; Town; Street; Postcode</p>
  
   </body>

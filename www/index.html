@@ -7,6 +7,7 @@
 	<script>
 	  function show(id)
 	  {
+	    playsound();
 	    hideAllMenus();
 	    var div = document.getElementById(id);
 		div.style.display = "block";
@@ -14,6 +15,7 @@
 	   
 	  function hide(id)
 	  {
+	    playsound();
 	    var div = document.getElementById(id);
 		div.style.display = "none";
 	   }
@@ -21,6 +23,13 @@
 	  {
 	    hide('projects');
 	   }
+	  function playsound()
+	  {
+	  var sound = new Audio();
+	  sound.src = "Music/shot.wav";
+	  sound.play();
+	  }
+	  
 	</script>
 	
   </head>
@@ -36,7 +45,7 @@
   <a href="#">3D Models</a>
   <a href="Contact.html">contact</a>
   <a href="index.html">home</a>
-  <a onclick= "show('projects')" href="#">Projects</a>
+  <a onclick= "show('projects')" href="#">Minor-Projects</a>
   <a href="CV.html">CV</a>
   <a href="hobbies.html">hobbies</a>
   </div>
@@ -50,12 +59,17 @@
   <div id="projects" style="display: none; background: orange; border-bottom: 1px solid black;">
      <img src="images/Desert Eagle drawing.jpg" style="height: 100px">
 	 <img src="images/3.jpg" style="height: 100px">
+	 <img src="images/0.jpg" style="height: 100px">
+     <img src="images/4.jpg" style="height: 100px">
+     <img src="images/5.jpg" style="height: 100px">
+     <img src="images/6.jpg" style="height: 100px">
+     <img src="images/7.jpg" style="height: 100px">	 
 	 <a onclick="hide('projects')" href="#">close</a>
   </div>
   
   <p style="font-weight: bold">Welcome !</p>
   <p style="font-size: 16; color: black(255, 50, 80)"</p>
-  <p class="sectionheading">My name is Luca</p>
+  <p class="sectionheading">My name is Luca Scuotto</p>
   
   <p class="sectionheading" style="font-weight: bold">This site is likely the best place to be to find my work.</p>
   <p class="sectionheading" style="font-weight: bold">Here is an example of one of the drawings I have done:</p>
