@@ -27,6 +27,16 @@
  background: rgb(255, 248, 38)
  }
  
+ .2D-Projectsbody
+ {
+  background: rgb(57, 212, 98)
+ }
+ 
+ .3D-Modelsbody
+ {
+   background: rgb(187, 7, 227)
+ }
+ 
  img
  {
 	border-width: 5px;
