@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title>Welcome!</title>
+    <title>Grimm's Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<script>
@@ -32,6 +32,9 @@
 	  
 	</script>
 	
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	
   </head>
   
   <body class="3DModelsbody">
@@ -54,6 +57,9 @@
   </div>
   
   <div style="float: right; width: 80%; background: rgb(100, 100, 100); min-height: 1000px">
+  
+  <model-viewer style="height: 500px; width: 500px" src="Models/Wine Bottle Model.glb" camera-controls></model-viewer>
+  
   </div>
   
   <div id="header">
